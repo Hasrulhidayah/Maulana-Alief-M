@@ -1,0 +1,594 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#000;
+    line-height:1.7;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#000;
+    padding:18px 8%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+    box-shadow:0 3px 15px rgba(0,0,0,.2);
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#cfcfcf;
+}
+
+nav .active{
+    border-bottom:2px solid #fff;
+    padding-bottom:5px;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:130px 8% 70px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#000;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#555;
+    font-size:18px;
+    margin-bottom:35px;
+    text-align:justify;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#444;
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+
+.page-title{
+    padding:130px 8% 60px;
+    text-align:center;
+}
+
+.page-title h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.page-title p{
+    color:#666;
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+}
+/* ==========================================
+   FITUR
+========================================== */
+
+.fitur{
+    padding:80px 8%;
+    background:#f8f8f8;
+}
+
+.fitur h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:45px;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.card i{
+    font-size:45px;
+    color:#000;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+}
+
+/* ==========================================
+   ABOUT
+========================================== */
+
+.about{
+    padding:80px 8%;
+}
+
+.about-text{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.about-text h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:34px;
+}
+
+.about-text p{
+    color:#555;
+    text-align:justify;
+    margin-bottom:15px;
+}
+
+/* ==========================================
+   STATISTIK
+========================================== */
+
+.statistik{
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    background:#f8f8f8;
+}
+
+.box{
+    background:#000;
+    color:#fff;
+    border-radius:15px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+}
+
+.box:hover{
+    transform:scale(1.05);
+}
+
+.box h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.box p{
+    color:#ddd;
+}
+
+/* ==========================================
+   ARTIKEL & TIPS
+========================================== */
+
+.artikel-container{
+    padding:20px 8% 80px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.artikel-card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.artikel-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+.artikel-card i{
+    font-size:45px;
+    color:#000;
+    margin-bottom:20px;
+}
+
+.artikel-card h2{
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.artikel-card p{
+    color:#555;
+    text-align:justify;
+}
+/* ==========================================
+   SIMULASI PHISHING
+========================================== */
+
+.simulasi{
+    padding:20px 8% 80px;
+}
+
+.email-card{
+    max-width:800px;
+    margin:auto;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.email-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.email-header i{
+    font-size:35px;
+    color:#000;
+}
+
+.email-card p{
+    color:#555;
+    margin:12px 0;
+}
+
+.email-card hr{
+    margin:20px 0;
+    border:1px solid #ddd;
+}
+
+/* ==========================================
+   KUIS
+========================================== */
+
+.quiz-container{
+    max-width:900px;
+    margin:auto;
+    padding:20px 8% 80px;
+}
+
+.question{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:20px;
+}
+
+.question h3{
+    margin-bottom:15px;
+}
+
+.question label{
+    display:block;
+    margin:12px 0;
+    cursor:pointer;
+    color:#444;
+}
+
+.question input{
+    margin-right:10px;
+}
+
+.hasil-kuis{
+    margin-top:30px;
+    background:#000;
+    color:#fff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+/* ==========================================
+   TABEL TENTANG
+========================================== */
+
+.info-table{
+    width:100%;
+    margin-top:25px;
+    border-collapse:collapse;
+}
+
+.info-table td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.info-table td:first-child{
+    width:180px;
+    font-weight:bold;
+}
+
+/* ==========================================
+   KONTAK
+========================================== */
+
+.contact-container{
+    padding:20px 8% 80px;
+    display:flex;
+    justify-content:center;
+}
+
+#contactForm{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    border:1px solid #ddd;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+#contactForm input,
+#contactForm textarea{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:16px;
+}
+
+#contactForm textarea{
+    resize:none;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus{
+    border:1px solid #000;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:40px 8%;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#ccc;
+}
+
+.social{
+    margin:20px 0;
+}
+
+.social i{
+    width:45px;
+    height:45px;
+    line-height:45px;
+    margin:0 6px;
+    border-radius:50%;
+    border:1px solid #fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social i:hover{
+    background:#fff;
+    color:#000;
+}
+
+.copy{
+    margin-top:20px;
+    font-size:14px;
+}
+
+/* ==========================================
+   BACK TO TOP
+========================================== */
+
+#backTop{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#000;
+    color:#fff;
+    cursor:pointer;
+    display:none;
+    font-size:22px;
+    transition:.3s;
+}
+
+#backTop:hover{
+    background:#444;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#000;
+}
+
+::-webkit-scrollbar-track{
+    background:#eee;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text p{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+    padding:15px;
+}
+
+nav{
+    gap:15px;
+}
+
+.hero{
+    padding-top:170px;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.page-title h1{
+    font-size:32px;
+}
+
+.card-container,
+.artikel-container,
+.statistik{
+    grid-template-columns:1fr;
+}
+
+.about-text{
+    padding:25px;
+}
+
+.info-table td{
+    display:block;
+    width:100%;
+}
+
+.social i{
+    margin:5px;
+}
+
+}
